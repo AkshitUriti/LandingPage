@@ -24,14 +24,13 @@ export function HeaderComponent() {
       <Link href="#how-it-works" className="text-[#38506e] hover:text-[#2581f3] transition-colors">How It Works</Link>
       <Link href="#community" className="text-[#38506e] hover:text-[#2581f3] transition-colors">Community</Link>
       <Link href="#about" className="text-[#38506e] hover:text-[#2581f3] transition-colors">About Us</Link>
-      <Link href="/blog" className="text-[#38506e] hover:text-[#2581f3] transition-colors">Blog</Link>
-      <Link href="#contact" className="text-[#38506e] hover:text-[#2581f3] transition-colors">Contact Us</Link>
+      <Link href="#contact" className="text-[#38506e] hover:text-[#2581f3] transition-colors">Connect With Us</Link>
     </>
   )
 
   return (
     <header className="w-full">
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#fcfcfd] shadow-sm' : 'bg-transparent'}`}>
+      <nav className="fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#fcfcfd] shadow-sm' : 'bg-transparent'}">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-2">
@@ -41,24 +40,26 @@ export function HeaderComponent() {
             <nav className="hidden md:flex md:space-x-8">
               <NavLinks />
             </nav>
+            <div className="md:hidden">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon" className="md:hidden text-black">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Toggle menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white backdrop-blur-md">
+                  <nav className="flex flex-col space-y-4 mt-8">
+                    <NavLinks />
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            </div>
             <div className="hidden md:block">
               <Button className="bg-[#2581f3] text-[#fcfcfd] hover:bg-[#2581f3]/90">
                 Join the Waitlist
               </Button>
             </div>
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="h-6 w-6" />
-                  <span className="sr-only">Toggle menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col space-y-4 mt-8">
-                  <NavLinks />
-                </nav>
-              </SheetContent>
-            </Sheet>
           </div>
         </div>
       </nav>

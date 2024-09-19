@@ -11,8 +11,8 @@ export function ProblemStatementComponent() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-[#0a274c] mb-6">The Problem We're Solving</h2>
           <p className="text-[#38506e] mb-12">
-            In today's rapidly evolving business landscape, traditional education often falls short. 
-            At IntendCareer, we're addressing the critical gaps that leave many students unprepared for the real world of business.
+            In today&#39;s rapidly evolving business landscape, traditional education often falls short. 
+            At IntendCareer, we&#39;re addressing the critical gaps that leave many students unprepared for the real world of business.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-3">

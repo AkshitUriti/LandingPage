@@ -60,7 +60,7 @@ export function CommunityNetworkingComponent() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-[#38506e]">{feature.description}</p>
+                  <p className="text-[#38506e]">{feature.description.replace(/'/g, '&apos;')}</p>
                 </CardContent>
               </Card>
             </motion.div>

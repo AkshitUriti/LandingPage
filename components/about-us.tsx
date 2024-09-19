@@ -71,7 +71,7 @@ export function AboutUsComponent() {
           className="mt-12 text-center"
         >
           <blockquote className="text-2xl font-semibold text-[#0a274c] italic">
-            "Empowering the next generation of business leaders through innovative education."
+            &quot;Empowering the next generation of business leaders through innovative education.&quot;
           </blockquote>
         </motion.div>
       </div>

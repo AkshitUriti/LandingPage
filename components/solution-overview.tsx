@@ -40,7 +40,7 @@ export function SolutionOverviewComponent() {
             Our Solution: A Modern Approach to Business Education
           </h2>
           <p className="text-[#38506e] text-lg">
-            At IntendCareer, we've reimagined business education by integrating AI-powered learning paths, 
+            At IntendCareer, we&aposve reimagined business education by integrating AI-powered learning paths, 
             practical tools, and community support to create a holistic educational platform.
           </p>
         </motion.div>
@@ -66,9 +66,7 @@ export function SolutionOverviewComponent() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-[#38506e]">
-                    {solution.description}
-                  </p>
+                  <p className="text-[#38506e]">{solution.description.replace(/'/g, '&apos;')}</p>
                   <motion.div 
                     className="mt-4 flex justify-end"
                     initial={{ opacity: 0 }}

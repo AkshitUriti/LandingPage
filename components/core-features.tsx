@@ -97,7 +97,7 @@ export function CoreFeaturesComponent() {
               {features[activeFeature].title}
             </h3>
             <p className="text-[#38506e] text-center">
-              {features[activeFeature].description}
+              {features[activeFeature].description.replace(/'/g, '&apos;')}
             </p>
           </motion.div>
         </div>

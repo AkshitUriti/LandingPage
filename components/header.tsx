@@ -30,7 +30,7 @@ export function HeaderComponent() {
 
   return (
     <header className="w-full">
-      <nav className="fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#fcfcfd] shadow-sm' : 'bg-transparent'}">
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-2">
